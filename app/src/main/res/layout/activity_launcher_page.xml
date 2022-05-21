@@ -4,43 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pngtree_open_book_quran_background_image_533299"
     tools:context=".LauncherPage">
 
     <Button
         android:id="@+id/learn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="81dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#AA3D3D"
         android:onClick="onClick"
         android:text="LEARN"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/quiz"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/quiz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="QUIZ"
-        android:textSize="20sp"
-        android:onClick="onClick"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/learn"
-        app:layout_constraintStart_toStartOf="@+id/learn"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/repo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:text="GO TO REPO"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#AA3D3D"
         android:onClick="onClick"
+        android:text="GO TO REPO"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/quiz"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="@+id/quiz"
         app:layout_constraintTop_toBottomOf="@+id/quiz" />
+
+    <Button
+        android:id="@+id/quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#AA3D3D"
+        android:onClick="onClick"
+        android:text="QUIZ"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/learn"
+        app:layout_constraintStart_toStartOf="@+id/learn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551" />
 
     <TextView
         android:id="@+id/textView2"
@@ -48,12 +55,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:layout_marginBottom="84dp"
-        android:text="Makharij App"
+        android:fontFamily="serif"
+        android:text="Makharij Ul Huruf"
+        android:textAllCaps="true"
         android:textColor="#777272"
-        android:textSize="40sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/learn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
 </androidx.constraintlayout.widget.ConstraintLayout>

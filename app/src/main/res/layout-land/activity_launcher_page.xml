@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pngtree_open_book_quran_background_image_533299"
     tools:context=".LauncherPage">
 
     <Button
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
+        android:backgroundTint="#AA3D3D"
         android:onClick="onClick"
         android:text="LEARN"
         android:textSize="20sp"
@@ -20,22 +22,11 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/repo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="28dp"
-        android:onClick="onClick"
-        android:text="GO TO REPO"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
         android:id="@+id/quiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
+        android:backgroundTint="#AA3D3D"
         android:onClick="onClick"
         android:text="QUIZ"
         android:textSize="20sp"
@@ -44,16 +35,31 @@
         app:layout_constraintTop_toTopOf="@+id/repo"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/repo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="#AA3D3D"
+        android:onClick="onClick"
+        android:text="GO TO REPO"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
-        android:text="Makharij App"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="serif"
+        android:text="Makharij Ul Huruf"
+        android:textAllCaps="true"
         android:textColor="#777272"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/quiz"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.443"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
