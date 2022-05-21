@@ -29,17 +29,18 @@
         app:layout_constraintTop_toTopOf="@+id/mak1" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/mak3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="غ خ "
+        android:onClick="onClick"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/mak2"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/mak2" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/mak4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="34dp"
@@ -49,135 +50,135 @@
         app:layout_constraintTop_toBottomOf="@+id/mak1" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/mak5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ك "
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintBottom_toBottomOf="@+id/mak4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
+        app:layout_constraintTop_toTopOf="@+id/mak4" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/mak6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ج ش ى"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button6"
+        app:layout_constraintBottom_toBottomOf="@+id/mak5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/button6" />
+        app:layout_constraintTop_toTopOf="@+id/mak5" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/mak7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="31dp"
         android:text="ض "
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/mak4" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/mak8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ل "
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button8"
+        app:layout_constraintBottom_toBottomOf="@+id/mak7"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/button8" />
+        app:layout_constraintTop_toTopOf="@+id/mak7" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/mak9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ن"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button9"
+        app:layout_constraintBottom_toBottomOf="@+id/mak8"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/button9" />
+        app:layout_constraintTop_toTopOf="@+id/mak8" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/mak10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="ر"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/mak7" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/mak11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ط د ت"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintBottom_toBottomOf="@+id/mak10"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/button11"
+        app:layout_constraintTop_toTopOf="@+id/mak10"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/mak12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ظ  ذ  ث "
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button12"
+        app:layout_constraintBottom_toBottomOf="@+id/mak11"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/button12" />
+        app:layout_constraintTop_toTopOf="@+id/mak11" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/mak13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="ص ز س"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/button11" />
+        app:layout_constraintTop_toBottomOf="@+id/mak10" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/mak14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="م ن"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button14"
+        app:layout_constraintBottom_toBottomOf="@+id/mak13"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/button14" />
+        app:layout_constraintTop_toTopOf="@+id/mak13" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/mak15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ف"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button15"
+        app:layout_constraintBottom_toBottomOf="@+id/mak14"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/button15" />
+        app:layout_constraintTop_toTopOf="@+id/mak14" />
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/mak16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="33dp"
         android:text="ب م و"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/button14" />
+        app:layout_constraintTop_toBottomOf="@+id/mak13" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/mak17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="باَ بوُ بىِ"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button17"
+        app:layout_constraintBottom_toBottomOf="@+id/mak16"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/button17" />
+        app:layout_constraintTop_toTopOf="@+id/mak16" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
