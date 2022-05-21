@@ -24,6 +24,8 @@ public class LauncherPage extends AppCompatActivity implements View.OnClickListe
                 startActivity(i1);
                 break;
             case R.id.quiz:
+                Intent i2 = new Intent(LauncherPage.this, SecondMainActivity.class);
+                startActivity(i2);
                 break;
             case R.id.repo:
                 Intent i3 = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/batoolfatima1/makharijApp") );
