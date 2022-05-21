@@ -46,6 +46,7 @@
         android:layout_marginTop="34dp"
         android:text="ق "
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/mak1" />
 
@@ -55,6 +56,7 @@
         android:layout_height="wrap_content"
         android:text="ك "
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="@+id/mak4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/mak4" />
@@ -65,6 +67,7 @@
         android:layout_height="wrap_content"
         android:text="ج ش ى"
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="@+id/mak5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/mak5" />
@@ -76,6 +79,7 @@
         android:layout_marginTop="31dp"
         android:text="ض "
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/mak4" />
 
@@ -85,6 +89,7 @@
         android:layout_height="wrap_content"
         android:text="ل "
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="@+id/mak7"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/mak7" />
@@ -95,6 +100,7 @@
         android:layout_height="wrap_content"
         android:text="ن"
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="@+id/mak8"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/mak8" />
@@ -106,6 +112,7 @@
         android:layout_marginTop="32dp"
         android:text="ر"
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/mak7" />
 
@@ -115,6 +122,7 @@
         android:layout_height="wrap_content"
         android:text="ط د ت"
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="@+id/mak10"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/mak10"
@@ -126,6 +134,7 @@
         android:layout_height="wrap_content"
         android:text="ظ  ذ  ث "
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="@+id/mak11"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/mak11" />
@@ -137,6 +146,7 @@
         android:layout_marginTop="32dp"
         android:text="ص ز س"
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/mak10" />
 
@@ -146,6 +156,7 @@
         android:layout_height="wrap_content"
         android:text="م ن"
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="@+id/mak13"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/mak13" />
@@ -156,6 +167,7 @@
         android:layout_height="wrap_content"
         android:text="ف"
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="@+id/mak14"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/mak14" />
@@ -167,6 +179,7 @@
         android:layout_marginTop="33dp"
         android:text="ب م و"
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/mak13" />
 
@@ -176,6 +189,7 @@
         android:layout_height="wrap_content"
         android:text="باَ بوُ بىِ"
         android:textSize="24sp"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="@+id/mak16"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/mak16" />
