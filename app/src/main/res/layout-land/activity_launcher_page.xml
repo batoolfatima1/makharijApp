@@ -17,6 +17,8 @@
         android:text="LEARN"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/quiz"
+        app:layout_constraintEnd_toStartOf="@+id/quiz"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/quiz"
         app:layout_constraintVertical_bias="0.0" />
@@ -25,12 +27,15 @@
         android:id="@+id/quiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
+        android:layout_marginStart="64dp"
         android:backgroundTint="#AA3D3D"
         android:onClick="onClick"
         android:text="QUIZ"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/repo"
+        app:layout_constraintEnd_toStartOf="@+id/repo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/learn"
         app:layout_constraintStart_toStartOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="@+id/repo"
         app:layout_constraintVertical_bias="0.0" />
@@ -46,7 +51,9 @@
         android:text="GO TO REPO"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/quiz" />
 
     <TextView
         android:id="@+id/textView2"

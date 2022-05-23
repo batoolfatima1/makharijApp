@@ -7,58 +7,78 @@
     tools:context=".SecondMainActivity">
 
     <Button
-        android:id="@+id/back"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginEnd="11dp"
-        android:text="-"
-        android:textAlignment="textEnd"
-        android:textColor="#AA3D3D"
-        android:textSize="34sp"
-        android:onClick="onClick"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button2" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="0dp"
-        android:layout_height="71dp"
-        android:layout_marginEnd="13dp"
-        android:backgroundTint="#AA3D3D"
-        android:text="as"
-        android:onClick="onClick"
-        android:textColor="#FAF8F8"
-        app:layout_constraintBaseline_toBaselineOf="@+id/next"
-        app:layout_constraintEnd_toStartOf="@+id/next"
-        app:layout_constraintStart_toEndOf="@+id/back" />
-
-    <Button
         android:id="@+id/next"
-        android:layout_width="0dp"
-        android:layout_height="74dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="104dp"
+        android:layout_width="108dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="573dp"
+        android:layout_marginBottom="7dp"
+        android:background="@android:color/transparent"
         android:onClick="onClick"
         android:text="+"
         android:textAlignment="textStart"
         android:textColor="#AA3D3D"
         android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/ans"
+        app:layout_constraintEnd_toStartOf="@+id/img1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/confirm"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="101dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="91dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:text="-"
+        android:textAlignment="textEnd"
+        android:textColor="#AA3D3D"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button2" />
+        app:layout_constraintEnd_toStartOf="@+id/confirm"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img1" />
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="100dp"
+        android:layout_height="71dp"
+        android:backgroundTint="#AA3D3D"
+        android:onClick="onClick"
+        android:text="أ ة"
+        android:textColor="#FAF8F8"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/next"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img1"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/ana_"
         android:textAlignment="textEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/test1" />
+
+    <TextView
+        android:id="@+id/ans"
+        android:layout_width="213dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#BD3939"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/next" />
 </androidx.constraintlayout.widget.ConstraintLayout>
