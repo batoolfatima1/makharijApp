@@ -5,247 +5,260 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pngtree_open_book_quran_background_image_533299"
+    android:textAlignment="center"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/mak1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="142dp"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="أ ة"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
+    <!--    <Button-->
+    <!--        android:id="@+id/mak1"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="142dp"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="أ ة"-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ع ح"-->
+
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mak1"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline3"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/mak1" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="غ خ "-->
+
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mak2"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline4"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/mak2" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="34dp"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ق "-->
+
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/mak1" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak5"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ك "-->
+
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mak4"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline3"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/mak4" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak6"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ج ش ى"-->
+
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mak5"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline4"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/mak5" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak7"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="31dp"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ض "-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/mak4" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak8"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ل "-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mak7"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline3"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/mak7" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak9"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ن"-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mak8"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline4"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/mak8" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak10"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ر"-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/mak7" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak11"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ط د ت"-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mak10"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline3"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/mak10"-->
+    <!--        app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak12"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ظ  ذ  ث "-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mak11"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline4"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/mak11" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak13"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ص ز س"-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/mak10" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak14"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="م ن"-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mak13"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline3"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/mak13" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak15"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ف"-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mak14"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline4"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/mak14" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak16"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="33dp"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="ب م و"-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline2"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/mak13" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/mak17"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:onClick="onClick"-->
+    <!--        android:text="باَ بوُ بىِ"-->
+    <!--        android:textSize="24sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/mak16"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/guideline3"-->
+    <!--        app:layout_constraintTop_toTopOf="@+id/mak16" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline2"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_begin="16dp" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline3"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_begin="150dp" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline4"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_begin="272dp" />-->
+
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/guideline5"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="#AA3D3D"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintGuide_begin="20dp" />-->
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/mak2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ع ح"
-
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/mak1"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/mak1" />
-
-    <Button
-        android:id="@+id/mak3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="غ خ "
-
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/mak2"
-        app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/mak2" />
-
-    <Button
-        android:id="@+id/mak4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ق "
-
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/mak1" />
-
-    <Button
-        android:id="@+id/mak5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ك "
-
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/mak4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/mak4" />
-
-    <Button
-        android:id="@+id/mak6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ج ش ى"
-
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/mak5"
-        app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/mak5" />
-
-    <Button
-        android:id="@+id/mak7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ض "
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/mak4" />
-
-    <Button
-        android:id="@+id/mak8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ل "
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/mak7"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/mak7" />
-
-    <Button
-        android:id="@+id/mak9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ن"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/mak8"
-        app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/mak8" />
-
-    <Button
-        android:id="@+id/mak10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ر"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/mak7" />
-
-    <Button
-        android:id="@+id/mak11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ط د ت"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/mak10"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/mak10"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/mak12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ظ  ذ  ث "
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/mak11"
-        app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/mak11" />
-
-    <Button
-        android:id="@+id/mak13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ص ز س"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/mak10" />
-
-    <Button
-        android:id="@+id/mak14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="م ن"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/mak13"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/mak13" />
-
-    <Button
-        android:id="@+id/mak15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ف"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/mak14"
-        app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/mak14" />
-
-    <Button
-        android:id="@+id/mak16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="ب م و"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/mak13" />
-
-    <Button
-        android:id="@+id/mak17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="باَ بوُ بىِ"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/mak16"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/mak16" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="16dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="150dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="272dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#AA3D3D"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="20dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

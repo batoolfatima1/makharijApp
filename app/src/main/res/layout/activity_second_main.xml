@@ -7,55 +7,50 @@
     tools:context=".SecondMainActivity">
 
     <Button
-        android:id="@+id/next"
-        android:layout_width="108dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="573dp"
-        android:layout_marginBottom="7dp"
-        android:background="@android:color/transparent"
-        android:onClick="onClick"
-        android:text="+"
-        android:textAlignment="textStart"
-        android:textColor="#AA3D3D"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/ans"
-        app:layout_constraintEnd_toStartOf="@+id/img1"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/confirm"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/option1"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
 
-    <Button
-        android:id="@+id/back"
-        android:layout_width="101dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="91dp"
-        android:background="@android:color/transparent"
-        android:onClick="onClick"
-        android:text="-"
-        android:textAlignment="textEnd"
-        android:textColor="#AA3D3D"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/confirm"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/img1" />
-
-    <Button
-        android:id="@+id/confirm"
-        android:layout_width="100dp"
-        android:layout_height="71dp"
         android:backgroundTint="#AA3D3D"
-        android:onClick="onClick"
-        android:text="أ ة"
-        android:textColor="#FAF8F8"
-        app:layout_constraintBottom_toBottomOf="@+id/back"
-        app:layout_constraintEnd_toStartOf="@+id/next"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/option2"
+        app:layout_constraintEnd_toStartOf="@+id/option2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/back"
-        app:layout_constraintTop_toTopOf="@+id/back" />
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/image" />
+
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#AA3D3D"
+        android:textAlignment="center"
+        android:textColor="#FAF8F8"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toStartOf="@+id/option3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/option1" />
+
+    <Button
+        android:id="@+id/option3"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#AA3D3D"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/option2"
+        app:layout_constraintEnd_toStartOf="@+id/image"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/option2" />
 
     <ImageView
-        android:id="@+id/img1"
+        android:id="@+id/image"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/ana_"
@@ -65,20 +60,19 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/test1" />
 
-    <TextView
-        android:id="@+id/ans"
-        android:layout_width="213dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="35dp"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="#BD3939"
-        android:textSize="30sp"
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:backgroundTint="#451E1E"
+        android:text="submit"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/next" />
+        app:layout_constraintEnd_toEndOf="@+id/option2"
+        app:layout_constraintStart_toEndOf="@+id/option1" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
