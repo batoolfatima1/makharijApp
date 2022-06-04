@@ -1,5 +1,6 @@
 package com.example.makharijapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -19,9 +20,9 @@ public class SecondMainActivity extends AppCompatActivity implements View.OnClic
     int totalQuestions = Quiz.questions.length;
     int index;
     String item, answer;
-    TextView ans;
+
     ImageView image;
-    int currentQuestion = 0, score =0;
+    int currentQuestion , score ;
     String selectedAnswer="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,7 @@ public class SecondMainActivity extends AppCompatActivity implements View.OnClic
         opt2 = (Button)findViewById(R.id.option2);
         opt1 =(Button)findViewById(R.id.option1);
         opt3 = findViewById(R.id.option3);
-        //ans = findViewById(R.id.ans);
+
         image=findViewById(R.id.image);
         submit=findViewById(R.id.submit);
 
@@ -64,90 +65,35 @@ public class SecondMainActivity extends AppCompatActivity implements View.OnClic
           selectedAnswer = clickedButton.getText().toString();
           clickedButton.setBackgroundColor(Color.BLACK);
       }
-//
-//        switch(v.getId())
-//        {
-//            case R.id.option3:
-//                back.setEnabled(true);
-//                item  = btn.getText().toString();
-//                for (int i = 0; i < array.length; i++)
-//                {
-//                    if (item.equals(array[i]))
-//                        index= i;
-//                }
-//                if(index == array.length-1)
-//                {
-//                    next.setEnabled(false);
-//                }
-//                else
-//                {
-//                    item = array[index+1];
-//                    btn.setText(array[index+1]);
-//                    next.setEnabled(true);
-//                }
-//
-//                break;
-//            case R.id.option1:
-//                item  = btn.getText().toString();
-//
-//                for (int i = 0; i < array.length; i++)
-//                {
-//                    if (item.equals(array[i]))
-//                        index= i;
-//                }
-//                if(index == 0)
-//                {
-//                    back.setEnabled(false);
-//                }
-//                else
-//                {
-//                    item = array[index-1];
-//                    btn.setText(array[index-1]);
-//                    next.setEnabled(true);
-//                    back.setEnabled(true);
-//                }
-//
-//                break;
-//            case R.id.option2:
-//                item  = btn.getText().toString();
-//                if(item.equals(array[15]))
-//                {
-//                    answer = "CORRECT";
-//                    ans.setText(answer);
-////                    i1.setVisibility(View.GONE);
-////                    i2.setVisibility(View.VISIBLE);
-//                }
-//                else
-//                {
-//                    answer = "INCORRECT";
-//                    ans.setText(answer);
-////                    i1.setVisibility(View.GONE);
-////                    i2.setVisibility(View.VISIBLE);
-//                }
-//                next.setClickable(false);
-//                back.setClickable(false);
-//                btn.setClickable(false);
-//        }
-   }
-//    @Override
-//
-//    public void onSaveInstanceState(Bundle savedInstanceState) {
-//
-//        super.onSaveInstanceState(savedInstanceState);
-//
-//        savedInstanceState.putString("btnValue",btn.getText().toString());
-//        savedInstanceState.putString("answer",ans.getText().toString());
-//    }
 
-//    @Override
-//
-//    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-//        super.onRestoreInstanceState(savedInstanceState);
-//        item = savedInstanceState.getString("btnValue");
-//        answer = savedInstanceState.getString("answer");
-//        ans.setText(answer);
-//        btn.setText(item);
-//    }
+   }
+
+    @Override
+
+    public void onSaveInstanceState(@NonNull Bundle savedInstanceState) {
+
+        super.onSaveInstanceState(savedInstanceState);
+
+        savedInstanceState.putInt("currentQuestion",currentQuestion);
+        savedInstanceState.putInt("score",score);
+        savedInstanceState.putString("SelectedAnswer",selectedAnswer);
+    }
+
+    @Override
+
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        currentQuestion=savedInstanceState.getInt("currentQuestion");
+
+        score=savedInstanceState.getInt("score");
+
+        selectedAnswer = savedInstanceState.getString("SelectedAnswer");
+
+        LoadNewQuestion();
+        
+
+    }
 
 
     public void LoadNewQuestion()
