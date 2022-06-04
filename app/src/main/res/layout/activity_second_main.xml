@@ -8,9 +8,10 @@
 
     <Button
         android:id="@+id/option1"
-        android:layout_width="125dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
 
+        android:layout_margin="5sp"
         android:backgroundTint="#AA3D3D"
         android:textAlignment="center"
         android:textColor="#FBFBFB"
@@ -21,11 +22,13 @@
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toEndOf="@+id/image" />
 
+
     <Button
         android:id="@+id/option2"
-        android:layout_width="125dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
 
+        android:layout_margin="5sp"
         android:layout_marginBottom="25dp"
         android:backgroundTint="#AA3D3D"
         android:textAlignment="center"
@@ -38,8 +41,9 @@
 
     <Button
         android:id="@+id/option3"
-        android:layout_width="125dp"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_margin="5sp"
         android:backgroundTint="#AA3D3D"
         android:textAlignment="center"
         android:textColor="#FBFBFB"
@@ -72,7 +76,19 @@
         android:text="submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/option2"
-        app:layout_constraintStart_toEndOf="@+id/option1" />
+        app:layout_constraintStart_toStartOf="@+id/option2" />
+
+    <TextView
+        android:id="@+id/numberbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:text="TextView"
+        android:textColor="#A33D3D"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,15 +15,15 @@ import android.widget.TextView;
 
 public class SecondMainActivity extends AppCompatActivity implements View.OnClickListener
 {
-    String[] array ={"أ ة","ع ح","غ خ","ق ","ك ","ج ش ى","ض ","ل  ","ن ","ر ","ط د ت","ظ  ذ  ث","ص ز س","م ن","ف","ب م و ","باَ بوُ بىِ"};
+//    String[] array ={"أ ة","ع ح","غ خ","ق ","ك ","ج ش ى","ض ","ل  ","ن ","ر ","ط د ت","ظ  ذ  ث","ص ز س","م ن","ف","ب م و ","باَ بوُ بىِ"};
     Button opt2,opt1,opt3,submit;
     int totalQuestions = Quiz.questions.length;
-    int index;
-    String item, answer;
-
+    String Clicked ;
     ImageView image;
     int currentQuestion , score ;
     String selectedAnswer="";
+    Boolean select;
+    TextView questionBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +31,7 @@ public class SecondMainActivity extends AppCompatActivity implements View.OnClic
         opt2 = (Button)findViewById(R.id.option2);
         opt1 =(Button)findViewById(R.id.option1);
         opt3 = findViewById(R.id.option3);
+        questionBar= findViewById(R.id.numberbar);
 
         image=findViewById(R.id.image);
         submit=findViewById(R.id.submit);
@@ -54,16 +55,28 @@ public class SecondMainActivity extends AppCompatActivity implements View.OnClic
 
       if(clickedButton.getId() == R.id.submit)
       {
-          if(selectedAnswer.equals(Quiz.answers[currentQuestion])){
-              score++;
+          if(select == false)
+          {
+              new AlertDialog.Builder(this)
+                      .setTitle("Select option")
+                      .setMessage("Select option before submitting")
+                      .show();
           }
-          currentQuestion++;
-          LoadNewQuestion();
+          else
+          {
+              if (selectedAnswer.equals(Quiz.answers[currentQuestion])) {
+                  score++;
+              }
+              currentQuestion++;
+              LoadNewQuestion();
+          }
       }
       else
       {
           selectedAnswer = clickedButton.getText().toString();
+          select = true;
           clickedButton.setBackgroundColor(Color.BLACK);
+          Clicked = clickedButton.getText().toString();
       }
 
    }
@@ -77,6 +90,9 @@ public class SecondMainActivity extends AppCompatActivity implements View.OnClic
         savedInstanceState.putInt("currentQuestion",currentQuestion);
         savedInstanceState.putInt("score",score);
         savedInstanceState.putString("SelectedAnswer",selectedAnswer);
+        savedInstanceState.putString("SelectedButton",Clicked);
+        savedInstanceState.putBoolean("select",select);
+
     }
 
     @Override
@@ -90,18 +106,37 @@ public class SecondMainActivity extends AppCompatActivity implements View.OnClic
 
         selectedAnswer = savedInstanceState.getString("SelectedAnswer");
 
+        Clicked = savedInstanceState.getString("SelectedButton");
+
+
         LoadNewQuestion();
-        
+
+        if(opt1.getText().toString().equals(Clicked))
+        {
+            opt1.setBackgroundColor(Color.BLACK);
+        }
+        else  if(opt2.getText().toString().equals(Clicked))
+        {
+            opt2.setBackgroundColor(Color.BLACK);
+        }
+        else  if(opt3.getText().toString().equals(Clicked))
+        {
+            opt3.setBackgroundColor(Color.BLACK);
+        }
+        select = savedInstanceState.getBoolean("select");
 
     }
 
 
     public void LoadNewQuestion()
     {
+        select = false;
         if(currentQuestion == totalQuestions ){
             finishQuiz();
             return;
         }
+        String s = (currentQuestion+1)+"/"+totalQuestions;
+        questionBar.setText(s);
         image.setImageResource(Quiz.questions[currentQuestion]);
         opt1.setText(Quiz.options[currentQuestion][0]);
         opt2.setText(Quiz.options[currentQuestion][1]);
